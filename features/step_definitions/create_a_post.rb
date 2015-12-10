@@ -20,14 +20,11 @@ When(/^I click on the New Post button$/) do
 end
 
 Then(/^I am at the New post page$/) do
-  	visit_page(Newpostpage) do |page|
-		page.enter_title 'Title 1'
-		@title = page.enter_title 
-	end
+   pending #to be completed
 end
 
 Then(/^I should be able to enter a title for the post$/) do
-	@key = 'Title 1'
+	@key = 'Title 13'
 	expect(@title).to eq(@key)
 end
 
@@ -43,7 +40,7 @@ When(/^I am in the New post page$/) do
 end
 
 Then(/^ I should be able to enter the body of the post $/) do
-	@key = 'Test some body of strings'
+	@key = 'Test some body of string'
 	expect(@body).to eq(@key)
 end
 
